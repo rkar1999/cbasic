@@ -4,6 +4,7 @@
 int main() {
     char team1[] = "Wrexham";
     char team2[] = "Brighton";
+    char team3[] = "Newcastle";
     char input_team[100];
     
     printf ("Enter team name - ");
@@ -17,9 +18,14 @@ int main() {
         printf("Chelsea (4-3) Brighton  (friendly)\n-PL summer series for Chelsea starts with a win\n-Nkunku,Mudryk,Gallagher & Jackson scored goals for the team\n-Jackson came from the bench ,scored one and assisted two\n ");
     }
 
+    else if (strcmp(input_team, team3) == 0) {
+        printf("Chelsea (1-1) Newcastle  (friendly)\n-Chelsea drew second pl series game\n-Jackson scored for the team\nHumpreys looked very promising\n ");
+    }
+
     else {
         printf("There is no data for that match.\n");
     }
     return 0;
 
 }
+
